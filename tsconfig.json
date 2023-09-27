@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "ES2020",
+      "DOM",
+      "dom.iterable"
+    ],
+    "target": "ES2020",
+    "jsx": "react-jsx",
+    "module": "esnext",
+    "baseUrl": "./",
+    "allowJs": true,
+    "outDir": "./build",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true
+  },
+  "include": [
+    "./src/**/*.tsx",
+    "./src/**/**/*.tsx",
+    "./src/**/*.js",
+    "./src/**/*.jsx",
+    "./stories/**/*.tsx",
+    "./stories/**/*.js",
+    "./src/**/*.ts"
+  ],
+  "exclude": [
+    "./node_modules",
+    "./build/**/*"
+  ]
+}
