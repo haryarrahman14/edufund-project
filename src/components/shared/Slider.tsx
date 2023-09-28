@@ -6,9 +6,9 @@ import 'swiper/css/scrollbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'src/styles/swiper.css';
-import { SliderItem } from 'src/types/SliderItem';
+import { ISlider } from 'src/types/Slider';
 
-const SliderItems = ({ items }: { items: SliderItem[] }) => {
+const Slider = ({ children }: ISlider) => {
   return (
     <Swiper
       loop
@@ -42,23 +42,11 @@ const SliderItems = ({ items }: { items: SliderItem[] }) => {
         }
       }}
     >
-      {items?.map((banner: SliderItem, index: number) => {
-        return (
-          <SwiperSlide key={index}>
-            <div className="relative">
-              <img
-                src={banner?.src}
-                className="lg:rounded-xl lg:w-[770px] lg:h-[270px] w-full h-[470px] object-cover "
-              />
-              <p className="absolute h-[2rem] lg:top-[14px] bottom-[64px] lg:left-[14px] left-[32px] text-[2rem] text-[#ffffff] font-bold capitalize z-10 border-l-[4px] border-[#ff9700] border-solid leading-[1.8rem] pl-[4px]">
-                {banner?.title}
-              </p>
-            </div>
-          </SwiperSlide>
-        );
-      })}
+      {children}
     </Swiper>
   );
 };
 
-export default SliderItems;
+Slider.Content = SwiperSlide;
+
+export default Slider;
