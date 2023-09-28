@@ -6,13 +6,7 @@ import 'swiper/css/scrollbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'src/styles/swiper.css';
-
-interface SliderItem {
-  createdAt: string;
-  id: string;
-  src: string;
-  title: string;
-}
+import { SliderItem } from 'src/types/SliderItem';
 
 const SliderItems = ({ items }: { items: SliderItem[] }) => {
   return (

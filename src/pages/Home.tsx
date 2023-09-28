@@ -1,5 +1,5 @@
-import PreRequisitesDocument from 'src/components/pages/home/PreRequisitesDocument';
-import Products from 'src/components/pages/home/Products';
+import PreRequisitesDocument from 'src/components/pages/home/preRequisitesDocument/PreRequisitesDocument';
+import Products from 'src/components/pages/home/products/Products';
 import SliderItems from 'src/components/shared/SliderItems';
 import { useGetBanners } from 'src/hooks/useBanners';
 

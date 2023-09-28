@@ -1,13 +1,4 @@
-interface Item {
-  name: string;
-  subItems?: string[];
-}
-
-interface Card {
-  title: string;
-  img?: string;
-  items?: Item[];
-}
+import { Card, Item } from 'src/types/Card';
 
 const Document = ({ title, img, items }: Card) => {
   return (
