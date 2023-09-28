@@ -7,14 +7,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'src/styles/swiper.css';
 
-interface BannerItem {
+interface SliderItem {
   createdAt: string;
   id: string;
   src: string;
   title: string;
 }
 
-export default ({ banners }: { banners: BannerItem[] }) => {
+const SliderItems = ({ items }: { items: SliderItem[] }) => {
   return (
     <Swiper
       loop
@@ -48,7 +48,7 @@ export default ({ banners }: { banners: BannerItem[] }) => {
         }
       }}
     >
-      {banners?.map((banner: BannerItem, index: number) => {
+      {items?.map((banner: SliderItem, index: number) => {
         return (
           <SwiperSlide key={index}>
             <div className="relative">
@@ -66,3 +66,5 @@ export default ({ banners }: { banners: BannerItem[] }) => {
     </Swiper>
   );
 };
+
+export default SliderItems;
