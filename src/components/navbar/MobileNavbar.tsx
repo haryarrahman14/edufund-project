@@ -70,6 +70,7 @@ const MobileNavbar = ({ items }: { items: item[] }) => {
                         ? 'text-[#ff9700]'
                         : 'text-[#868e96] hover:text-[#ff9700]'
                     }`}
+                    onClick={() => setIsOpen(false)}
                   >
                     {item?.name}
                   </Link>
