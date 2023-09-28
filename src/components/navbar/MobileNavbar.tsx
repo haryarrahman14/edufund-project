@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 import { AnimatePresence, motion } from 'framer-motion';
 
@@ -8,6 +9,7 @@ interface item {
 }
 
 const MobileNavbar = ({ items }: { items: item[] }) => {
+  const { pathname } = useLocation();
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
@@ -52,13 +54,17 @@ const MobileNavbar = ({ items }: { items: item[] }) => {
             <div className="bg-[#ffffff] fixed w-full flex flex-col px-[30px] pb-[40px] z-10">
               {items?.map((item: item, idx: number) => {
                 return (
-                  <a
+                  <Link
                     key={idx}
-                    href={item?.href}
-                    className="text-[1rem] text-[#868e96] hover:text-[#ff9700] leading-[1.5rem] py-[0.7rem] ml-[48px]"
+                    to={item?.href}
+                    className={`text-[1rem] leading-[1.5rem] py-[0.7rem] ml-[48px] ${
+                      pathname == item?.href
+                        ? 'text-[#ff9700]'
+                        : 'text-[#868e96] hover:text-[#ff9700]'
+                    }`}
                   >
                     {item?.name}
-                  </a>
+                  </Link>
                 );
               })}
             </div>

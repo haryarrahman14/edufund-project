@@ -7,8 +7,8 @@
     "^react",
     "^react(/.*|$)",
     "<THIRD_PARTY_MODULES>",
-    "^(client|hooks|utils)(/.*|$)",
-    "^(components|pages|src)(/.*|$)",
+    "^(./client|./hooks|./utils)(/.*|$)",
+    "^(./components|./pages|src)(/.*|$)",
     "^[./]"
   ],
   "importOrderSeparation": true,

@@ -1,9 +1,13 @@
+import { Link, useLocation } from 'react-router-dom';
+
 interface item {
   name: string;
   href: string;
 }
 
 const LargeNavbar = ({ items }: { items: item[] }) => {
+  const { pathname } = useLocation();
+
   return (
     <div className="bg-[#ffffff]">
       <div className="max-w-[1200px] mx-auto hidden h-[70px] lg:flex justify-between items-center px-[30px]">
@@ -15,13 +19,17 @@ const LargeNavbar = ({ items }: { items: item[] }) => {
         <div className="flex items-center">
           {items?.map((item: item, idx: number) => {
             return (
-              <a
+              <Link
                 key={idx}
-                href={item?.href}
-                className="text-[1rem] text-[#0e2e4f] hover:text-[#ff9700] text-center leading-[1.5rem] mx-[14px]"
+                to={item?.href}
+                className={`text-[1rem] text-center leading-[1.5rem] mx-[14px] ${
+                  pathname == item?.href
+                    ? 'text-[#ff9700]'
+                    : 'text-[#0e2e4f] hover:text-[#ff9700]'
+                }`}
               >
                 {item?.name}
-              </a>
+              </Link>
             );
           })}
         </div>

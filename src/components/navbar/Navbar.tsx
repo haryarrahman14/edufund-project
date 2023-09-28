@@ -7,11 +7,11 @@ interface item {
 }
 
 const items: item[] = [
-  { name: 'Beranda', href: '' },
-  { name: 'Cara Kerja', href: '' },
-  { name: 'Cara Bayar', href: '' },
-  { name: 'Tentang Kami', href: '' },
-  { name: 'Hubungi Kami', href: '' }
+  { name: 'Beranda', href: '/' },
+  { name: 'Cara Kerja', href: 'how-it-works' },
+  { name: 'Cara Bayar', href: 'how-to-pay' },
+  { name: 'Tentang Kami', href: 'about-us' },
+  { name: 'Hubungi Kami', href: 'contact-us' }
 ];
 
 const Navbar = () => {
