@@ -22,7 +22,7 @@ const CardBody = ({ customClass = '', children }: ICardBody) => {
 const Card = ({ customClass = '', children }: ICard) => {
   return (
     <div
-      className={`h-full flex flex-col bg-[#ffffff] p-[20px] rounded-[16px] ${customClass}`}
+      className={`h-full flex flex-col bg-[#ffffff] p-[20px] rounded-[16px] shadow-lg ${customClass}`}
     >
       {children}
     </div>

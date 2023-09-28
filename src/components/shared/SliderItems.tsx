@@ -18,7 +18,7 @@ const SliderItems = ({ items }: { items: SliderItem[] }) => {
       pagination={{
         clickable: true
       }}
-      className="max-w-[1200px] lg:my-[40px]"
+      className="max-w-[1200px] lg:pt-[40px]"
       effect="coverflow"
       modules={[EffectCoverflow, Navigation, Autoplay, Pagination]}
       slidesPerView={1.5}

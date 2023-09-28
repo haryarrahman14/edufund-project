@@ -8,10 +8,8 @@ import Routes from './routes';
 function App() {
   return (
     <Router>
-      <div className="bg-[#f5f5f7]">
-        <Navbar />
-        <Routes />
-      </div>
+      <Navbar />
+      <Routes />
     </Router>
   );
 }
