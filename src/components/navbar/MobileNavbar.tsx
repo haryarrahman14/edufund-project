@@ -33,7 +33,15 @@ const MobileNavbar = ({ items }: { items: item[] }) => {
         </div>
 
         <div className="flex items-center gap-[8px] md:gap-[24px]">
-          <p className="text-[1rem] text-[#0e2e4f]">TKB90 = 95%</p>
+          <div className="flex items-center gap-[4px]">
+            <img
+              className="mx-[5px]"
+              src="https://edufund.co.id/assets/images/icon/fa-information-custom.png"
+              alt="info"
+              width="14px"
+            />
+            <p className="text-[1rem] text-[#0e2e4f]">TKB90 = 95%</p>
+          </div>
           <img
             className="cursor-pointer"
             src="https://edufund.co.id/assets/images/icon/person.png"
