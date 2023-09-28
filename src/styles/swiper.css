@@ -1,0 +1,49 @@
+.swiper-pagination-bullet {
+  background-color: #ffffff;
+}
+
+.swiper-pagination-bullet-active {
+  width: 24px;
+  border-radius: 4px;
+  background-color: #ff9700;
+}
+
+.swiper-button-next {
+  right: 30px;
+  background-color: white;
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  border-radius: 32px;
+}
+
+.swiper-button-prev {
+  left: 30px;
+  background-color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+}
+
+.swiper-button-next::after {
+  background: url('https://edufund.co.id/assets/images/icon/icon-orange-right-arrow.png');
+  width: 24px;
+  height: 24px;
+  content: '';
+}
+
+.swiper-button-prev::after {
+  background: url('https://edufund.co.id/assets/images/icon/icon-orange-left-arrow.png');
+  width: 24px;
+  height: 24px;
+  content: '';
+}
+
+@media screen and (max-width: 1024px) {
+  .swiper-button-next {
+    display: none;
+  }
+  .swiper-button-prev {
+    display: none;
+  }
+}
