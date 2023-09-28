@@ -1,10 +1,14 @@
-export interface IItem {
-  name: string;
-  subItems?: string[];
+export interface ICardHeader {
+  title: string;
+  img?: string;
+}
+
+export interface ICardBody {
+  children: JSX.Element | JSX.Element[];
+  customClass?: string;
 }
 
 export interface ICard {
-  title: string;
-  img?: string;
-  items?: IItem[];
+  children: JSX.Element | JSX.Element[];
+  customClass?: string;
 }
