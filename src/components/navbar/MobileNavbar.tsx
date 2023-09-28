@@ -30,7 +30,7 @@ const MobileNavbar = ({ items }: { items: item[] }) => {
           />
         </div>
 
-        <div className="flex items-center gap-[24px]">
+        <div className="flex items-center gap-[8px] md:gap-[24px]">
           <p className="text-[1rem] text-[#0e2e4f]">TKB90 = 95%</p>
           <img
             className="cursor-pointer"
