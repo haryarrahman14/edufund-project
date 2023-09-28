@@ -1,6 +1,6 @@
-import { Product } from 'src/types/Product';
+import { IProduct } from 'src/types/Product';
 
-export const products: Product[] = [
+export const products: IProduct[] = [
   {
     title: 'EduCollege',
     img: 'https://edufund.co.id/assets/images/icon/dashboard-educollege.svg'

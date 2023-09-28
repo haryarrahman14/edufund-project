@@ -1,14 +1,15 @@
-import { Card, Item } from 'src/types/Card';
+import { ICard, IItem } from 'src/types/Card';
 
-const Document = ({ title, img, items }: Card) => {
+const Card = ({ title, img, items }: ICard) => {
   return (
     <div className="h-full flex flex-col bg-[#ffffff] p-[20px] rounded-[16px]">
       {img && <img className="mx-auto mt-[-64px]" width={124} src={img} />}
       <p className="text-[1.2rem] text-[#0e2e4f] text-center font-bold">
         {title}
       </p>
+
       <div className="flex flex-col gap-[16px] mt-[24px]">
-        {items?.map((item: Item) => {
+        {items?.map((item: IItem) => {
           return (
             <>
               <div className="flex flex-row items-start gap-[8px]">
@@ -44,4 +45,4 @@ const Document = ({ title, img, items }: Card) => {
   );
 };
 
-export default Document;
+export default Card;

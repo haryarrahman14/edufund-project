@@ -1,6 +1,6 @@
-import { Document } from 'src/types/PreRequisitesDocument';
+import { IDocument } from 'src/types/PreRequisitesDocument';
 
-export const preRequisites: Document[] = [
+export const preRequisites: IDocument[] = [
   {
     title: 'Pekerja',
     img: 'https://edufund.co.id/assets/images/icon/icon-pekerja.svg',

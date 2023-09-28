@@ -1,10 +1,10 @@
-export interface Item {
+export interface IItem {
   name: string;
   subItems?: string[];
 }
 
-export interface Document {
+export interface IDocument {
   title: string;
   img: string;
-  items: Item[];
+  items: IItem[];
 }

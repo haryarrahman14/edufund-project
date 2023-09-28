@@ -1,5 +1,5 @@
 import Card from 'src/components/shared/Card';
-import { Document } from 'src/types/PreRequisitesDocument';
+import { IDocument } from 'src/types/PreRequisitesDocument';
 
 import { preRequisites } from './PreRequisitesData';
 
@@ -11,7 +11,7 @@ const PreRequisitesDocument = () => {
       </p>
 
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:mx-0 mx-[40px] gap-[24px]">
-        {preRequisites?.map((document: Document, index: number) => {
+        {preRequisites?.map((document: IDocument, index: number) => {
           return (
             <div className="mt-[40px] min-h-[400px]">
               <Card
