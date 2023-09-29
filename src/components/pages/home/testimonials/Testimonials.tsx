@@ -1,7 +1,7 @@
 import Card from 'src/components/shared/Card';
 import Slider from 'src/components/shared/Slider';
 import { useGetTestimonials } from 'src/hooks/useTestimonials';
-import { ITestimonial } from 'src/types/Testimonials';
+import { ITestimonial } from 'src/types/pages/home/Testimonials';
 
 const Testimonials = () => {
   const { data } = useGetTestimonials({
@@ -22,34 +22,32 @@ const Testimonials = () => {
             slidesPerView={1.75}
             spaceBetween={-100}
           >
-            {testimonials?.map((testimonial: ITestimonial, index: number) => {
-              return (
-                <Slider.Content key={index}>
-                  <Card customClass="lg:min-h-[300px] min-h-[400px]">
-                    <Card.Header
-                      img={testimonial?.avatar}
-                      imgClass="w-[100px] h-[100px] rounded-[100px] object-fit"
-                    />
-                    <Card.Body>
+            {testimonials?.map((testimonial: ITestimonial, index: number) => (
+              <Slider.Content key={index}>
+                <Card customClass="lg:min-h-[300px] min-h-[400px]">
+                  <Card.Header
+                    img={testimonial?.avatar}
+                    imgClass="w-[100px] h-[100px] rounded-[100px] object-fit"
+                  />
+                  <Card.Body>
+                    <p className="text-[18px] text-[#525A67] text-center font-bold">
+                      {testimonial?.title}
+                    </p>
+                    <p className="text-[14px] text-[#525A67] text-center ">
+                      {testimonial?.comment}
+                    </p>
+                    <div>
                       <p className="text-[18px] text-[#525A67] text-center font-bold">
-                        {testimonial?.title}
+                        {testimonial?.name}
                       </p>
                       <p className="text-[14px] text-[#525A67] text-center ">
-                        {testimonial?.comment}
+                        {testimonial?.occupation}
                       </p>
-                      <div>
-                        <p className="text-[18px] text-[#525A67] text-center font-bold">
-                          {testimonial?.name}
-                        </p>
-                        <p className="text-[14px] text-[#525A67] text-center ">
-                          {testimonial?.occupation}
-                        </p>
-                      </div>
-                    </Card.Body>
-                  </Card>
-                </Slider.Content>
-              );
-            })}
+                    </div>
+                  </Card.Body>
+                </Card>
+              </Slider.Content>
+            ))}
           </Slider>
         )}
       </div>

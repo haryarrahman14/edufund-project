@@ -60,22 +60,20 @@ const MobileNavbar = ({ items }: { items: item[] }) => {
             exit={{ opacity: 0 }}
           >
             <div className="bg-[#ffffff] fixed w-full flex flex-col px-[30px] pb-[40px] z-10">
-              {items?.map((item: item, idx: number) => {
-                return (
-                  <Link
-                    key={idx}
-                    to={item?.href}
-                    className={`text-[1rem] leading-[1.5rem] py-[0.7rem] ml-[48px] ${
-                      pathname == item?.href
-                        ? 'text-[#ff9700]'
-                        : 'text-[#868e96] hover:text-[#ff9700]'
-                    }`}
-                    onClick={() => setIsOpen(false)}
-                  >
-                    {item?.name}
-                  </Link>
-                );
-              })}
+              {items?.map((item: item, idx: number) => (
+                <Link
+                  key={idx}
+                  to={item?.href}
+                  className={`text-[1rem] leading-[1.5rem] py-[0.7rem] ml-[48px] ${
+                    pathname == item?.href
+                      ? 'text-[#ff9700]'
+                      : 'text-[#868e96] hover:text-[#ff9700]'
+                  }`}
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item?.name}
+                </Link>
+              ))}
             </div>
           </motion.div>
         )}

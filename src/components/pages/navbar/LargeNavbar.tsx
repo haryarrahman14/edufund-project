@@ -16,21 +16,19 @@ const LargeNavbar = ({ items }: { items: item[] }) => {
         width="142px"
       />
       <div className="flex items-center">
-        {items?.map((item: item, idx: number) => {
-          return (
-            <Link
-              key={idx}
-              to={item?.href}
-              className={`text-[1rem] text-center leading-[1.5rem] mx-[14px] ${
-                pathname == item?.href
-                  ? 'text-[#ff9700]'
-                  : 'text-[#0e2e4f] hover:text-[#ff9700]'
-              }`}
-            >
-              {item?.name}
-            </Link>
-          );
-        })}
+        {items?.map((item: item, idx: number) => (
+          <Link
+            key={idx}
+            to={item?.href}
+            className={`text-[1rem] text-center leading-[1.5rem] mx-[14px] ${
+              pathname == item?.href
+                ? 'text-[#ff9700]'
+                : 'text-[#0e2e4f] hover:text-[#ff9700]'
+            }`}
+          >
+            {item?.name}
+          </Link>
+        ))}
       </div>
       <div className="flex items-center gap-[4px]">
         <img
