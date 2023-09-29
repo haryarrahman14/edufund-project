@@ -15,7 +15,7 @@ const MobileNavbar = ({ items }: { items: item[] }) => {
   return (
     <>
       {/* Mobile */}
-      <div className="lg:hidden h-[70px] flex justify-between items-center px-[30px] z-10">
+      <div className="bg-[#ffffff] lg:hidden h-[70px] flex justify-between items-center px-[30px] z-10">
         <div className="flex items-center gap-[24px]">
           <img
             onClick={() => setIsOpen(!isOpen)}

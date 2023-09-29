@@ -10,7 +10,7 @@ const PreRequisitesDocument = () => {
         Dokumen yang harus kamu siapkan
       </p>
 
-      <div className="mx-[40px] lg:mx-[100px] grid grid-cols-1 gap-[64px] md:grid-cols-3 md:gap-[24px] pt-[64px]">
+      <div className="mx-[40px] lg:mx-[100px] grid grid-cols-1 md:grid-cols-3 md:gap-[24px] pt-[80px]">
         {preRequisites?.map((document: IDocument, index: number) => (
           <Card key={index} customClass="min-h-[400px]">
             <Card.Header title={document?.title} img={document?.img} />

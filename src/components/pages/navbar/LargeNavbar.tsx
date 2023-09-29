@@ -9,7 +9,7 @@ const LargeNavbar = ({ items }: { items: item[] }) => {
   const { pathname } = useLocation();
 
   return (
-    <div className="max-w-[1200px] mx-auto hidden h-[70px] lg:flex justify-between items-center px-[30px]">
+    <div className="bg-[rgba(255,255,255,.8)] backdrop-blur-[12px] max-w-[1200px] mx-auto hidden h-[70px] lg:flex justify-between items-center px-[30px]">
       <img
         src="https://edustorage.oss-ap-southeast-5.aliyuncs.com/assets/edufund-logo.svg"
         alt="logo"

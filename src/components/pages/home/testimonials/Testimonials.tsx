@@ -10,15 +10,15 @@ const Testimonials = () => {
 
   const testimonials = data?.slice(0, 5);
   return (
-    <div className="mt-[80px] bg-[url(https://edufund.co.id/testimonial.367b389a02e6009af1bf.svg)] bg-no-repeat bg-cover bg-center">
-      <div className="lg:max-w-[1200px] mx-auto pt-[80px]">
+    <div className="mt-[80px] bg-[url(https://edufund.co.id/testimonial.367b389a02e6009af1bf.svg)] bg-no-repeat bg-cover lg:bg-top bg-center">
+      <div className="lg:max-w-[1200px] mx-auto pt-[40px]">
         <p className="text-[2rem] text-[#0e2e4f] text-center font-bold">
           Apa Kata Mereka
         </p>
 
         {testimonials && testimonials?.length > 0 && (
           <Slider
-            customClass="testimonials pt-[64px]"
+            customClass="testimonials pt-[104px]"
             slidesPerView={1.75}
             spaceBetween={-100}
           >

@@ -16,7 +16,7 @@ const items: item[] = [
 
 const Navbar = () => {
   return (
-    <div className="sticky top-0 z-10 bg-[rgba(255,255,255,.8)] backdrop-blur-[12px]">
+    <div className="sticky top-0 z-10 ">
       {/* Large */}
       <LargeNavbar items={items} />
 
