@@ -1,6 +1,5 @@
+import { products } from 'src/static/ProductsData';
 import { IProduct } from 'src/types/static/Product';
-
-import { products } from './ProductsData';
 
 const Products = () => {
   return (

@@ -1,7 +1,7 @@
-import Banners from 'src/components/pages/home/banners/Banners';
-import PreRequisitesDocument from 'src/components/pages/home/preRequisitesDocument/PreRequisitesDocument';
-import Products from 'src/components/pages/home/products/Products';
-import Testimonials from 'src/components/pages/home/testimonials/Testimonials';
+import Banners from 'src/components/pages/home/Banners';
+import PreRequisitesDocument from 'src/components/pages/home/PreRequisitesDocument';
+import Products from 'src/components/pages/home/Products';
+import Testimonials from 'src/components/pages/home/Testimonials';
 
 const Home = () => {
   return (

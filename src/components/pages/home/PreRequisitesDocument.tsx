@@ -1,7 +1,6 @@
 import Card from 'src/components/shared/Card';
+import { preRequisites } from 'src/static/PreRequisitesData';
 import { IDocument, IItem } from 'src/types/static/PreRequisitesDocument';
-
-import { preRequisites } from './PreRequisitesData';
 
 const PreRequisitesDocument = () => {
   return (
