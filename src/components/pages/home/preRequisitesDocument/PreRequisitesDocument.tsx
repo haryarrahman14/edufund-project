@@ -6,11 +6,11 @@ import { preRequisites } from './PreRequisitesData';
 const PreRequisitesDocument = () => {
   return (
     <div className="lg:max-w-[1200px] mt-[80px] mx-auto">
-      <p className="text-[2rem] text-[#0e2e4f] text-center font-bold mb-[64px]">
+      <p className="text-[2rem] text-[#0e2e4f] text-center font-bold">
         Dokumen yang harus kamu siapkan
       </p>
 
-      <div className="lg:mx-[100px] mx-[40px] grid  md:grid-cols-3 grid-cols-1 md:gap-[24px] gap-[64px]">
+      <div className="mx-[40px] lg:mx-[100px] grid grid-cols-1 gap-[64px] md:grid-cols-3 md:gap-[24px] pt-[64px]">
         {preRequisites?.map((document: IDocument) => {
           return (
             <Card customClass="min-h-[400px]">

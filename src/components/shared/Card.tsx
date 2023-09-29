@@ -1,19 +1,27 @@
 import { ICard, ICardBody, ICardHeader } from 'src/types/Card';
 
-const CardHeader = ({ img, title }: ICardHeader) => {
+const CardHeader = ({ img, imgClass = '', title }: ICardHeader) => {
   return (
     <>
-      {img && <img className="mx-auto mt-[-64px]" width={124} src={img} />}
-      <p className="text-[1.2rem] text-[#0e2e4f] text-center font-bold">
-        {title}
-      </p>
+      {img && (
+        <img
+          className={`mx-auto mt-[-64px] ${imgClass}`}
+          width={124}
+          src={img}
+        />
+      )}
+      {title && (
+        <p className="text-[1.2rem] text-[#0e2e4f] text-center font-bold">
+          {title}
+        </p>
+      )}
     </>
   );
 };
 
 const CardBody = ({ customClass = '', children }: ICardBody) => {
   return (
-    <div className={`flex flex-col gap-[16px] mt-[24px] ${customClass}`}>
+    <div className={`flex flex-col grow gap-[16px] mt-[24px] ${customClass}`}>
       {children}
     </div>
   );

@@ -1,6 +1,7 @@
 export interface ICardHeader {
-  title: string;
+  title?: string;
   img?: string;
+  imgClass?: string;
 }
 
 export interface ICardBody {

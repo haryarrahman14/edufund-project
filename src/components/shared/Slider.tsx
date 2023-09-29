@@ -8,7 +8,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'src/styles/swiper.css';
 import { ISlider } from 'src/types/Slider';
 
-const Slider = ({ children }: ISlider) => {
+const Slider = ({
+  customClass = '',
+  spaceBetween = 100,
+  slidesPerView = 1.5,
+  children
+}: ISlider) => {
   return (
     <Swiper
       loop
@@ -18,10 +23,9 @@ const Slider = ({ children }: ISlider) => {
       pagination={{
         clickable: true
       }}
-      className="max-w-[1200px] lg:pt-[40px]"
+      className={`max-w-[1200px] ${customClass}`}
       effect="coverflow"
       modules={[EffectCoverflow, Navigation, Autoplay, Pagination]}
-      slidesPerView={1.5}
       coverflowEffect={{
         rotate: 0,
         slideShadows: false
@@ -33,12 +37,11 @@ const Slider = ({ children }: ISlider) => {
       }}
       breakpoints={{
         0: {
-          modules: [Autoplay],
           slidesPerView: 1
         },
         1024: {
-          spaceBetween: 100,
-          slidesPerView: 1.5
+          spaceBetween: spaceBetween,
+          slidesPerView: slidesPerView
         }
       }}
     >

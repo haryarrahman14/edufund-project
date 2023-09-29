@@ -1,4 +1,4 @@
-import Slider from 'src/components/shared/SliderItems';
+import Slider from 'src/components/shared/Slider';
 import { useGetBanners } from 'src/hooks/useBanners';
 import { IBanner } from 'src/types/Banners';
 
