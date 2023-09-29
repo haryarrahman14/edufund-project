@@ -1,9 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 
-interface item {
-  name: string;
-  href: string;
-}
+import { item } from 'src/types/pages/home/Navbar';
 
 const LargeNavbar = ({ items }: { items: item[] }) => {
   const { pathname } = useLocation();

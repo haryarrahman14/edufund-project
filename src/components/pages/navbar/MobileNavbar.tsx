@@ -3,10 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 import { AnimatePresence, motion } from 'framer-motion';
 
-interface item {
-  name: string;
-  href: string;
-}
+import { item } from 'src/types/pages/home/Navbar';
 
 const MobileNavbar = ({ items }: { items: item[] }) => {
   const { pathname } = useLocation();
