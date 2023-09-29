@@ -6,7 +6,7 @@ import Testimonials from 'src/components/pages/home/testimonials/Testimonials';
 const Home = () => {
   return (
     <div className="bg-[#f5f5f7]">
-      <div className="lg:pt-[40px] bg-[url(../public/bg-top.svg)] bg-no-repeat bg-cover lg:bg-bottom bg-center">
+      <div className="lg:pt-[40px] bg-[url(../public/bg-top.svg)] bg-no-repeat bg-cover bg-bottom">
         <Banners />
         <Products />
       </div>
