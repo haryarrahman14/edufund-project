@@ -1,4 +1,4 @@
-import { ICard, ICardBody, ICardHeader } from 'src/types/Card';
+import { ICard, ICardBody, ICardHeader } from 'src/types/components/Card';
 
 const CardHeader = ({ img, imgClass = '', title }: ICardHeader) => {
   return (

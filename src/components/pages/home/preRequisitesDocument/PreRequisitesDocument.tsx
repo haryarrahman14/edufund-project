@@ -1,5 +1,5 @@
 import Card from 'src/components/shared/Card';
-import { IDocument, IItem } from 'src/types/PreRequisitesDocument';
+import { IDocument, IItem } from 'src/types/static/PreRequisitesDocument';
 
 import { preRequisites } from './PreRequisitesData';
 

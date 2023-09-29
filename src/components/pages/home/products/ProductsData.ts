@@ -1,4 +1,4 @@
-import { IProduct } from 'src/types/Product';
+import { IProduct } from 'src/types/static/Product';
 
 export const products: IProduct[] = [
   {

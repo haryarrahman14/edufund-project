@@ -6,7 +6,7 @@ import 'swiper/css/scrollbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'src/styles/swiper.css';
-import { ISlider } from 'src/types/Slider';
+import { ISlider } from 'src/types/components/Slider';
 
 const Slider = ({
   customClass = '',

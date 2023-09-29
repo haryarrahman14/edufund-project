@@ -1,4 +1,4 @@
-import { IDocument } from 'src/types/PreRequisitesDocument';
+import { IDocument } from 'src/types/static/PreRequisitesDocument';
 
 export const preRequisites: IDocument[] = [
   {

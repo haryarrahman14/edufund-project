@@ -1,6 +1,6 @@
 import Slider from 'src/components/shared/Slider';
 import { useGetBanners } from 'src/hooks/useBanners';
-import { IBanner } from 'src/types/Banners';
+import { IBanner } from 'src/types/pages/home/Banners';
 
 const Banners = () => {
   const { data: banners } = useGetBanners({
