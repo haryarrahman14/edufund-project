@@ -2,8 +2,8 @@
 
 <img width="886" alt="Group 1 (1)" src="https://github.com/haryarrahman14/edufund-project/assets/142674988/7263cc59-2fad-4715-b8d0-81243d886479">
 
+<img width="935" alt="Group 3 (1)" src="https://github.com/haryarrahman14/edufund-project/assets/142674988/313bafbc-6472-44db-abed-67eb2e5f4ca8">
 
-<img width="935" alt="Group 3" src="https://github.com/haryarrahman14/edufund-project/assets/142674988/ce4a92a2-b19b-42e1-9e83-c9f673e95d08">
 
 
 ## Deployment : 
