@@ -49,32 +49,34 @@ const MobileNavbar = ({ items }: { items: item[] }) => {
       </div>
 
       {/* Mobile Items */}
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
-            <div className="bg-[#ffffff] fixed w-full flex flex-col px-[30px] pb-[40px] z-10">
-              {items?.map((item: item, idx: number) => (
-                <Link
-                  key={idx}
-                  to={item?.href}
-                  className={`text-[1rem] leading-[1.5rem] py-[0.7rem] ml-[48px] ${
-                    pathname == item?.href
-                      ? 'text-[#ff9700]'
-                      : 'text-[#868e96] hover:text-[#ff9700]'
-                  }`}
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item?.name}
-                </Link>
-              ))}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      <div className="absolute w-full top-[70px]">
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+            >
+              <div className="relative bg-[#ffffff] w-full flex flex-col px-[30px] pb-[40px] z-10">
+                {items?.map((item: item, idx: number) => (
+                  <Link
+                    key={idx}
+                    to={item?.href}
+                    className={`text-[1rem] leading-[1.5rem] py-[0.7rem] ml-[48px] ${
+                      pathname == item?.href
+                        ? 'text-[#ff9700]'
+                        : 'text-[#868e96] hover:text-[#ff9700]'
+                    }`}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item?.name}
+                  </Link>
+                ))}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
     </>
   );
 };
